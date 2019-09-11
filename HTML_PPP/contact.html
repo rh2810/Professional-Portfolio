@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Third Web Page!</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">Main</a>
+      <a href="./images.html">  Places  </a>
+      Contact
+    </header>
+    <h1>Contact Info</h1>
+    <label>
+    Email: <a id="email" href="mailto:hurstrc@dukes.jmu.edu">hurstrc@dukes.jmu.edu</a>
+    </label>
+    <br>
+    <label>
+    Phone: <a id="phone" href="tel:5405552075">(540) 555-2075</a>
+    </label>
+    <br><br>
+    <form method="POST" id="msg_form">
+      <label for="message">Leave me a message:</label>
+      <br>
+      <textarea id="message" form="msg_form" name="extra" rows="8" cols="50"
+      minlength="5" maxlength="250" required></textarea>
+      <br>
+      <section class="post_msg">
+            <input type="submit" value="Submit">
+      </section>
+    </form>
+  </body>
+</html>
