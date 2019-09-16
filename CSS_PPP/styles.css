@@ -1,0 +1,123 @@
+@font-face {
+  font-family: myFirstFont;
+  /*https://www.fontsquirrel.com/*/
+  src: url(./source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(white, blue);
+  background-repeat: round;
+  background-clip: padding-box;
+  transform: scaleX(.90);
+}
+
+h1 {
+  font-family: myFirstFont;
+  color: blue;
+}
+
+h1.main_header {
+  color: blue;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #00bfff;
+}
+
+header {
+  word-spacing: 5em;
+  height:100px;
+  /* background-image: url("../HTML_PPP/images/schoodic_point.JPG"); */
+  background-image: url("../HTML_PPP/images/schoodic_point.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  object-fit: cover;
+}
+
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  text-overflow: inherit;
+  clear: both inherit;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+table, th, td, tr {
+  border: 1px solid black;
+  border-color: #006789;
+  border-width: medium;
+  border-style: ridge;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+section input{
+  float: none;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+h2 + ul {
+    margin: 0 auto;
+    text-align: center;
+    list-style-position: inside;
+    display: block;
+    list-style-type: circle;
+}
+
+ul.links_list, ul.links_list > * {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #FF00FF;
+}
+
+p::first-line {
+  color: black;
+  font-variant: small-caps;
+}
+
+p::after {
+  content: none;
+}
+
+.places_image{
+  box-shadow: 5px 10px #888888;
+  filter: contrast(125%);
+}
+
+#prof_img {
+  border: 10px solid transparent;
+  padding: 15px;
+  /* https://www.w3schools.com/css/css3_border_images.asp */
+  border-image: url("../HTML_PPP/images/image_border.png") 30% round;
+  display: inline;
+}
+
+#maine {
+  visibility: visible;
+}
+
+#japan {
+  display: none;
+  visibility: hidden;
+}
+
+#table_header ~ table.table_data {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  width: 40%;
+  display: inline-block;
+}
